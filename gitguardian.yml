@@ -1,0 +1,26 @@
+# .gitguardian.yml
+version: 2
+
+secret:
+  # Paths to ignore
+  ignored-paths:
+    - "**/terraform.tfstate"
+    - "**/terraform.tfstate.backup"
+    - "**/.terraform/**"
+    - "**/node_modules/**"
+    - "**/*.tfvars"
+
+  # Matches to ignore (by policy name)
+  ignored-policies:
+    - []
+
+  # Specific secret matches to ignore (by SHA)
+  ignored-matches:
+    - name: ""
+      match: ""
+
+  # Detectors to ignore
+  ignored-detectors: []
+
+  # Show secrets in output
+  sho
